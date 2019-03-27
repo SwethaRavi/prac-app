@@ -1,0 +1,53 @@
+
+
+<h2>Room Booking Management</h2>
+<br/>
+<div class="container">
+
+  <img src="./assets/images/ppl.png" class="ppl" width="28x" height="28px"/> 
+  <span>Choose number of <b>people</b></span>
+
+  <div class="sub-container">
+   
+    <img src="./assets/images/bed.png" class="sub-img" />
+    <span class="sub-text">ROOMS</span>
+    <button type="button" class="btn btn-success glyphicon glyphicon-plus" [disabled]="isDisabled" (click)="RoomIncrement()"></button>
+    <button type="button" *ngIf="roomcount > 1; else falsecd" class="btn btn-danger glyphicon glyphicon-minus"[disabled]="isDisabled"   (click)="RoomDecrement()"></button>
+    <span (change)="DisableCount()" class="countval">{{roomcount}}</span>
+    <ng-template #falsecd>
+            <button type="button"  class="btn btn-danger glyphicon glyphicon-minus" [disabled]="true"   (click)="RoomDecrement()"></button>
+    </ng-template>
+  
+   
+    <hr />
+
+    <img src="./assets/images/person.png" class="sub-img" />
+    <span class="sub-text">ADULTS</span>
+    <button type="button" class="btn btn-success glyphicon glyphicon-plus"[disabled]="isDisabled"  (click)="AdultIncrement()"></button> 
+    <button type="button" *ngIf="adultcount > 1; else falsecd1" class="btn btn-danger glyphicon glyphicon-minus" (click)="AdultDecrement()"></button>
+    <span (change)="DisableCount1()" class="countval">{{adultcount}}</span>
+    <ng-template #falsecd1>
+            <button type="button"  class="btn btn-danger glyphicon glyphicon-minus" [disabled]="true"   (click)="AdultDecrement()"></button>
+    </ng-template>
+    <hr />
+
+    <img src="./assets/images/child1.png" class="sub-img" />
+    <span class="sub-text">CHILDREN</span>
+    <button type="button" class="btn btn-success glyphicon glyphicon-plus" [disabled]="isDisabled" (click)="ChildIncrement()" ></button>
+    <button type="button" *ngIf="childcount > 0; else falsecd2" class="btn btn-danger glyphicon glyphicon-minus" (click)="ChildDecrement()"></button>
+    <span (change)="DisableCount1()" class="countval">{{childcount}}</span>
+    <ng-template #falsecd2>
+      <button type="button" class="btn btn-danger glyphicon glyphicon-minus" [disabled]="true"   (click)="ChildDecrement()"></button>
+    </ng-template>
+   
+
+  </div>
+ 
+</div>
+
+<br/>
+<div style="margin-left:30em">
+  <h4>Room/Rooms Booked: {{roomcount}}</h4>
+  <h4>Total No.of persons: {{adultcount + childcount}}</h4>
+</div>
+

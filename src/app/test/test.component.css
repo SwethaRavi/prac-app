@@ -1,0 +1,92 @@
+.container{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+.sub-container{
+    border: 1.2px solid darkgray;
+    width: 100%;
+    margin-top: 15px;
+}
+
+h2{
+    color: #01579B;
+    font-family: sans-serif;
+    text-align: center
+}
+.ppl{
+    vertical-align: bottom;
+}
+
+hr{
+    width: 92%;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    size: 10px;
+}
+
+.sub-img{
+    width: 28x;   
+    height:28px; 
+    margin: 25px;
+
+}
+
+span{
+   font-size: 28px;
+   font-family: Calibri; 
+   margin-left: 15px;
+   color: #01579B
+  
+}
+.sub-text{
+    vertical-align: middle;
+    margin-left: -5px;
+    font-size: 22px;
+}
+.glyphicon{
+    color:white;  
+}
+.btn-danger{
+   
+    margin-left: 0;
+    border-radius: 60%;
+    margin-right:20px;
+    float: right;
+    padding-right: 12px;
+    margin-top: 20px;
+    outline: none;
+    border:none;
+}
+
+.btn-danger:active{
+    outline: none;
+    border:none;
+}
+
+
+.btn-success{
+    border-radius: 60%;
+    float: right;
+    margin-right: 30px;
+    margin-top: 20px;
+    outline: none;
+    border:none;
+}
+
+.btn-success:active{
+  outline: none;
+  border:none;
+}
+.countval{
+    float: right;
+    margin-left: 0px;
+    padding-left:0px;
+    margin-right: 20px;
+    margin-top: 20px; 
+    font-size: 22px;
+   
+    
+}
