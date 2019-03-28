@@ -1,6 +1,8 @@
 # PracApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+Node version : 6.4.1
+npm version: 10.15.2
 
 # Steps to run the application:
 -> Dowload the Zip file
